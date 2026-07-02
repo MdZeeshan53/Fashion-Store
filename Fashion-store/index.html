@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale | Premium E-commerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Sale</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#featured">Products</a></li>
+                <li><a href="#payment">Payment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="nav-icon" id="searchIcon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="nav-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <div class="cart-header">Your Cart</div>
+                    <div class="cart-items" id="cartItemsList">
+                        <p class="cart-empty">Your cart is empty.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-left animate">
+                <h1>Exclusive Spring Sale</h1>
+                <p class="hero-desc">"Refresh your wardrobe for the season! Limited-time deals on our new spring arrivals. Shop now before they're gone!"</p>
+                
+                <div class="decorative-icons">
+                    <div class="icon-circle">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="icon-circle">
+                        <i class="fas fa-feather"></i>
+
+                    </div>
+                    <div class="icon-circle">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+                
+                <div class="trusted-users">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="trusted-text">Over 10K happy users all over the world</p>
+                </div>
+            </div>
+            <div class="hero-center animate">
+                <img src="images/main1.png" alt="Woman shopping with tablet" class="hero-image">
+            </div>
+            <div class="hero-right animate">
+                <h2 class="latest-product-heading">Latest Product</h2>
+                <div class="product-cards">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Material</h3>
+                            <p>Premium cotton fabric with soft texture for ultimate comfort.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-vest"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Material</h3>
+                            <p>High-quality denim with stretch for flexibility and durability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Material</h3>
+                            <p>Breathable mesh and rubber sole for all-day comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <p class="section-subtitle">Browse our wide range of premium categories to find exactly what you're looking for</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/Men\'sFashion.avif');"></div>
+                    <div class="category-name">Men's Fashion</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/womenf.avif');"></div>
+                    <div class="category-name">Women's Collection</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/ch.avif');"></div>
+                    <div class="category-name">Accessories</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/Footwear.avif');"></div>
+                    <div class="category-name">Footwear</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featured-products-section" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Discover our carefully curated selection of premium products</p>
+            
+            <div class="products-grid">
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('images/mens-vintage-denim-jacket.jpg');">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-name">Classic Denim Jacket</h3>
+                        <div class="product-category">Men's Fashion</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="product-price">
+                            <div class="price">₹79.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('images/New-Women-High-Split.avif');">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-name">Summer Floral Dress</h3>
+                        <div class="product-category">Women's Collection</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <div class="price">₹89.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('images/shopping.webp');">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-name">Premium Running Shoes</h3>
+                        <div class="product-category">Footwear</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <div class="price">₹129.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('images/bag.avif');">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-name">Leather Handbag</h3>
+                        <div class="product-category">Accessories</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="product-price">
+                            <div class="price">₹149.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-30">
+                <a href="#" class="btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+    <section class="best-sellers-section">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <p class="section-subtitle">Our most popular products loved by thousands of customers worldwide</p>
+            
+            <div class="bestsellers-grid">
+                <div class="bestseller-card">
+                    <div class="bestseller-badge">BEST SELLER</div>
+                    <div class="bestseller-img" style="background-image: url('images/PremiumWirelessHeadphones.webp');"></div>
+                    <div class="bestseller-info">
+                        <h3 class="bestseller-name">Premium Wireless Headphones</h3>
+                        <p class="bestseller-desc">Experience crystal-clear audio with our premium wireless headphones. Features noise cancellation and 30-hour battery life.</p>
+                        <div class="product-price">
+                            <div class="price">₹199.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bestseller-card">
+                    <div class="bestseller-badge">BEST SELLER</div>
+                    <div class="bestseller-img" style="background-image: url('images/SmartWatchPro.webp');"></div>
+                    <div class="bestseller-info">
+                        <h3 class="bestseller-name">Smart Watch Pro</h3>
+                        <p class="bestseller-desc">Stay connected with our advanced smart watch. Tracks fitness, heart rate, and offers smartphone notifications.</p>
+                        <div class="product-price">
+                            <div class="price">₹299.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bestseller-card">
+                    <div class="bestseller-badge">BEST SELLER</div>
+                    <div class="bestseller-img" style="background-image: url('images/ProfessionalCmra.webp');"></div>
+                    <div class="bestseller-info">
+                        <h3 class="bestseller-name">Professional Camera Kit</h3>
+                        <p class="bestseller-desc">Capture stunning photos with our professional camera kit. Includes camera body, lens, and accessories for beginners.</p>
+                        <div class="product-price">
+                            <div class="price">₹899.99</div>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offer-banner">
+        <div class="container">
+            <div class="offer-content">
+                <h2 class="offer-title">Limited Time Offer</h2>
+                <p class="offer-text">Get up to 50% off on all premium products. Don't miss this incredible opportunity!</p>
+                <button class="offer-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">We provide exceptional service and premium products to ensure the best shopping experience</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="feature-title">Free Shipping</h3>
+                    <p class="feature-desc">Free worldwide shipping on all orders over ₹50. Fast delivery with tracking.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Secure Payment</h3>
+                    <p class="feature-desc">100% secure payment processing. We protect your data with SSL encryption.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Returns</h3>
+                    <p class="feature-desc">30-day hassle-free return policy. We make returns simple and convenient.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-desc">Round-the-clock customer support. We're here to help whenever you need us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Customer Testimonials</h2>
+            <p class="section-subtitle">See what our satisfied customers have to say about their shopping experience</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-img" style="background-image: url('images/ex1.avif');"></div>
+                        <p class="testimonial-text">"I absolutely love shopping here! The quality of products is exceptional and the customer service is outstanding. My orders always arrive on time and in perfect condition."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="testimonial-name">Sarah Johnson</h4>
+                        <p class="testimonial-role">Frequent Customer</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-img" style="background-image: url('images/ex2.jpeg');"></div>
+                        <p class="testimonial-text">"The spring sale was incredible! I got amazing deals on premium products. The website is easy to navigate and the checkout process was smooth. Highly recommended!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4 class="testimonial-name">Michael Chen</h4>
+                        <p class="testimonial-role">First-time Buyer</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-img" style="background-image: url('images/ex3.jpeg');"></div>
+                        <p class="testimonial-text">"Excellent service and product quality! I've ordered multiple times and have never been disappointed. The free shipping on orders over ₹50 is a great bonus too!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="testimonial-name">Emma Rodriguez</h4>
+                        <p class="testimonial-role">Loyal Customer</p>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    
+                    <button class="slider-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter-text">Get the latest updates on new products and upcoming sales</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span>Sale</span>
+                    </div>
+                    <p class="footer-desc">Your premier destination for premium fashion and lifestyle products. We offer quality, style, and exceptional customer service.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#featured">Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 501 Orchid Plaza, Bandra Kurla Complex, Mumbai, Maharashtra 400051, India</p>
+                        <p><i class="fas fa-phone"></i> +91 22 5555 1234</p>
+                        <p><i class="fas fa-envelope"></i> info@sale-store.in</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 10AM-7PM IST</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Sale Store. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
